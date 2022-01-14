@@ -38,12 +38,6 @@ body {
     font-family: 'Montserrat';
 }
   
-
-.chart{
-    width: 75%;
-    margin: auto;
-}
-  
 input[type=text], input[type=password] {
     width: 100%;
     padding-top: 10px;
