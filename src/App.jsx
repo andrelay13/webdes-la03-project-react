@@ -5,6 +5,7 @@ import Login from './components/login/Login';
 import Homepage from './components/homepage/Homepage';
 import Advisor from './components/advisor/Advisor';
 import History from './components/history/History';
+import Register from './components/register/Register';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/home" element={< Homepage />} />
           <Route path="/history" element={< History/>}/>
           <Route path="/advisor" element={< Advisor/>} />
+          <Route path="/register" element={<Register/>}/>
         </Routes>
       </Router>
     </div>

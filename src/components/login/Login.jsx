@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 // let user = {
@@ -62,8 +63,8 @@ const login = (e) => {
                 />
               </div>
               <div className="center">
-              <span className="donthaveaccount">Don't have account? </span>
-              <a href="register.html">Register Here</a>
+                <span className="donthaveaccount">Don't have account? </span>
+                <Link to={"/register"}>Register Here</Link>
               </div>
               <button
                 type="submit"

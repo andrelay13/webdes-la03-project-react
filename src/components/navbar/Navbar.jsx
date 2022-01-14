@@ -5,7 +5,7 @@ import {Link, NavLink} from "react-router-dom"
 function Navbar() {
     return (
         <div>
-          <div class="navi">
+          <div className="navi">
             <h1>BMI ADVISOR</h1>            
                 <ul>
                     <li><NavLink to={"/home"}>Home</NavLink></li>
