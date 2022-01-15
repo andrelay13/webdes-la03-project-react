@@ -67,6 +67,16 @@
      grid-template-columns: repeat(2, 1fr);
  }
 
+ .radio-container {
+    font-size: 22px;
+    padding: 10px;
+}
+
+.radio-container input {
+    height: 20px;
+    width: 20px;
+}
+
  .info-overlay {
     width: 0;
     height: 100%;
@@ -137,19 +147,23 @@ span:hover {
      font-size: 20px; 
  }
  
- div > label {
-     display: block;
-     font-size: 20px;
- }
+ .form-group > label {
+    display: block;
+    font-size: 20px;
+}
+
+.form-group > input {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+    border-style: none;
+    height: 40px;
+}
  
- div > input {
-     width: 100%;
-     margin-top: 10px;
-     border-radius: 20px;
-     border-style: none;
-     height: 40px;
- }
- 
+.font-20 {
+    font-size: 20px;
+}
+
  .btn-container {
      grid-column: 1 / span 2;
      text-align: center;
@@ -160,6 +174,13 @@ span:hover {
     width: 50%;
     border-radius: 20px;
     border-style: none;
+ }
+
+ .small-btn{
+    border-radius: 10px;
+    padding: 5px 10px;
+    border-style: none;
+    margin-left: 10px;
  }
  
  .green-btn {
