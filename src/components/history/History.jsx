@@ -48,7 +48,7 @@ function History() {
   return (
     <div>
       <Navbar />
-      <h1 className="center">BMI HISTORY</h1>
+      <h1 className="center paddingTop-80">BMI HISTORY</h1>
       <div className="chart">
         <Line
           // datasetIdKey="id"

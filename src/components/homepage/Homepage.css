@@ -19,13 +19,13 @@
  }
  
  .content p{
-     margin-top: 10px;
+     margin-top: 5px;
      font-style: italic;
  }
    
  .content ul {
      padding-left: 30px;
-     margin-top: 30px;
+     margin-top: 15px;
  }
  
  .content li{
@@ -34,11 +34,11 @@
  }
  
  .content ul > h1 {
-     font-size: 32px;
+     font-size: 28px;
  }
 
  .content ul > h2 {
-    font-size: 24px;
+    font-size: 20px;
 }
  
  .long-hr {
@@ -53,14 +53,14 @@
  
  .section-container {
      margin-bottom: 50px;
-     padding-top: 120px;
+     padding-top: 55px;
      display: grid;
      grid-template-columns: repeat(2, 1fr)
  }
       
  .form-container {
      background-color: #86F0BD;
-     padding: 30px;
+     padding: 20px;
      margin: 0px 50px;
      border-radius: 20px;
      
@@ -72,7 +72,7 @@
  }
 
  .radio-container {
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px;
 }
 
@@ -161,7 +161,7 @@ span:hover {
     margin-top: 10px;
     border-radius: 20px;
     border-style: none;
-    height: 40px;
+    /* height: 40px; */
 }
  
 .font-20 {
