@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    text-align: center;
+}
+
+.header-title{
+    padding-top: 80px;
+}
+
+body {
+    font-family: arial;
+    padding-top: 50px;
+}
+
+.card {
+    width: 260px;
+    height: 270px;
+    display: inline-table;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.card:hover {
+    outline: .2rem solid lightgreen;
+    outline-offset: 0;
+    transform: scale(.9);
+}
+
+.image img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.des {
+    padding: 3px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.advisor-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.advisor-detail .preview {
+    display: none;
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+    position: sticky;
+    margin: 2rem;
+    width: 50rem;
+}
+
+.advisor-detail .preview.active {
+    display: inline-block;
+}
+
+.advisor-detail .preview .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    font-size: 4rem;
+}
+
+.advisor-detail .preview h3 {
+    color: #444;
+    padding: 5rem 0;
+    font-size: 2.5rem;
+}
