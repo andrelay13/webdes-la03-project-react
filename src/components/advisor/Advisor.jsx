@@ -9,8 +9,23 @@ import informed from "./img/informed.jpeg"
 import learn from "./img/learn.jpeg"
 import relax from "./img/relax.jpeg"
 import lifestyle from "./img/lifestyle.jpeg"
+import closeIcon from "./img/close.png"
 
 function Advisor() {
+    
+    const onClick = (id) => {
+        document.getElementById("advisor-detail").style.display = "inline-block"
+
+        let change_id = "preview".concat(id)
+        document.getElementById(change_id).style.display = "inline-block" 
+    }
+
+    const onClose = (id) => {
+        document.getElementById("advisor-detail").style.display = "none"
+
+        let change_id = "preview".concat(id)
+        document.getElementById(change_id).style.display = "none" 
+    }
 
   return (
     <div>
@@ -19,7 +34,7 @@ function Advisor() {
         <div className="header-title">
                 <h1>Advisor Page</h1>
             </div>
-            <div className="card" data-name="a-1">
+            <div className="card" data-name="a-1" onClick={() => {onClick(1)}}>
                 <div className="image">
                     <img src={relax} width="100" height="150"/>
                 </div>
@@ -31,7 +46,7 @@ function Advisor() {
                 </div>
             </div>
 
-            <div className="card" data-name="a-2">
+            <div className="card" data-name="a-2" onClick={() => {onClick(2)}}>
                 <div className="image">
                     <img src={learn} width="100" height="150"/>
                 </div>
@@ -44,7 +59,7 @@ function Advisor() {
             </div>
 
 
-            <div className="card" data-name="a-3">
+            <div className="card" data-name="a-3" onClick={() => {onClick(3)}}>
                 <div className="image">
                     <img src={informed} width="100" height="150"/>
                 </div>
@@ -58,7 +73,7 @@ function Advisor() {
             </div>
 
 
-            <div className="card" data-name="a-4">
+            <div className="card" data-name="a-4" onClick={() => {onClick(4)}}>
                 <div className="image">
                     <img src={food} width="100" height="150"/>
                 </div>
@@ -72,7 +87,7 @@ function Advisor() {
             </div>
 
 
-            <div className="card" data-name="a-5">
+            <div className="card" data-name="a-5" onClick={() => {onClick(5)}}>
                 <div className="image">
                     <img src={fitness} width="100" height="150"/>
                 </div>
@@ -86,7 +101,7 @@ function Advisor() {
             </div>
 
 
-            <div className="card" data-name="a-6">
+            <div className="card" data-name="a-6" onClick={() => {onClick(6)}}>
                 <div className="image">
                     <img src={care}width="100" height="150"/>
                 </div>
@@ -100,7 +115,7 @@ function Advisor() {
             </div>
 
 
-            <div className="card" data-name="a-7">
+            <div className="card" data-name="a-7" onClick={() => {onClick(7)}}>
                 <div className="image">
                     <img src={lifestyle} width="100" height="150"/>
                 </div>
@@ -114,7 +129,7 @@ function Advisor() {
             </div>
 
 
-            <div className="card" data-name="a-8">
+            <div className="card" data-name="a-8" onClick={() => {onClick(8)}}>
                 <div className="image">
                     <img src={diet} width="100" height="150"/>
                 </div>
@@ -128,9 +143,10 @@ function Advisor() {
             </div>
             </div>
 
-            <div className="advisor-detail">
-            <div className="preview" data-target="a-1">
-                <i className="fas fa-times"></i>
+            <div className="advisor-detail" id="advisor-detail">
+                <div className="center">
+                <div className="preview" data-target="a-1" id="preview1">
+                <img src={closeIcon} alt="close" width="30" height="30" className="close" onClick={() => {onClose(1)}}/>
                 <img src={relax} width="500" height="300"/>
                 <h3>Relax</h3>
                 <p>Stress can be detrimental to your health. Maintaining
@@ -150,8 +166,8 @@ function Advisor() {
                     works best for you.</p>
             </div>
 
-            <div className="preview" data-target="a-2">
-                <i className="fas fa-times"></i>
+            <div className="preview" data-target="a-2" id="preview2">
+                <img src={closeIcon} alt="close" width="30" height="30" className="close" onClick={() => {onClose(2)}}/>
                 <img src={learn} width="500" height="300"/>
                 <h3>Learn your numbers</h3>
                 <p>Unhealthy eating habits and less physical activity 
@@ -171,8 +187,8 @@ function Advisor() {
                     costs in health problems.</p>
             </div>
 
-            <div className="preview" data-target="a-3">
-                <i className="fas fa-times"></i>
+            <div className="preview" data-target="a-3" id="preview3">
+                <img src={closeIcon} alt="close" width="30" height="30" className="close" onClick={() => {onClose(3)}}/>
                 <img src={informed} width="500" height="300"/>
                 <h3>Get informed</h3>
                 <p>The BMI ranges are based on the effect excessive body fat 
@@ -193,8 +209,8 @@ function Advisor() {
                     as a BMI-for-age value over +1 SD and obesity as a BMI-for-age value over +2 SD.</p>
             </div>
 
-            <div className="preview" data-target="a-4">
-                <i className="fas fa-times"></i>
+            <div className="preview" data-target="a-4" id="preview4">
+                <img src={closeIcon} alt="close" width="30" height="30" className="close" onClick={() => {onClose(4)}}/>
                 <img src={food} width="500" height="300"/>
                 <h3>Healthy eating</h3>
                 <p>All humans have to eat food for growth and maintenance 
@@ -209,8 +225,8 @@ function Advisor() {
                     age groups because adults and seniors often do the same.</p>
             </div>
 
-            <div className="preview" data-target="a-5">
-                <i className="fas fa-times"></i>
+            <div className="preview" data-target="a-5" id="preview5">
+                <img src={closeIcon} alt="close" width="30" height="30" className="close" onClick={() => {onClose(5)}}/>
                 <img src={fitness} width="500" height="300"/>
                 <h3>Fitness and Sport</h3>
                 <p>For sure, playing sports is a generally a fantastic 
@@ -225,8 +241,8 @@ function Advisor() {
                     being some of the reasons why you should take up a sport.</p>
             </div>
 
-            <div className="preview" data-target="a-6">
-                <i className="fas fa-times"></i>
+            <div className="preview" data-target="a-6" id="preview6">
+                <img src={closeIcon} alt="close" width="30" height="30" className="close" onClick={() => {onClose(6)}}/>
                 <img src={care} width="500" height="300"/>
                 <h3>Get preventive care</h3>
                 <p>Preventing a disease or illness can be much
@@ -242,8 +258,8 @@ function Advisor() {
                     called routine care.</p>
             </div>
 
-            <div className="preview" data-target="a-7">
-                <i className="fas fa-times"></i>
+            <div className="preview" data-target="a-7" id="preview7">
+                <img src={closeIcon} alt="close" width="30" height="30" className="close" onClick={() => {onClose(7)}}/>
                 <img src={lifestyle} width="500" height="300"/>
                 <h3>Healthy Lifestyle</h3>
                 <p>When you’re not at your healthiest, you can probably tell. 
@@ -258,8 +274,8 @@ function Advisor() {
                     to make more positive shifts.</p>
             </div>
 
-            <div className="preview" data-target="a-8">
-                <i className="fas fa-times"></i>
+            <div className="preview" data-target="a-8" id="preview8">
+                <img src={closeIcon} alt="close" width="30" height="30" className="close" onClick={() => {onClose(8)}}/>
                 <img src={diet} width="500" height="300"/>
                 <h3>Diet</h3>
                 <p>Consuming a healthy diet throughout the
@@ -278,6 +294,10 @@ function Advisor() {
                     context, locally available foods and dietary customs. However, 
                     the basic principles of what constitutes a healthy diet remain the same.</p>
             </div>
+                </div>
+            
+
+            
         </div>
       </div>
   );
