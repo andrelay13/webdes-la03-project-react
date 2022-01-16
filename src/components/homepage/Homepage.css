@@ -15,7 +15,7 @@
  }
  
  .content h1{
-     font-size: 40px;
+     font-size: 32px;
  }
  
  .content p{
@@ -29,13 +29,17 @@
  }
  
  .content li{
-     font-size: 24px;
-     margin-top: 30px;
+     font-size: 18px;
+     margin-top: 20px;
  }
  
- .content ul li h1 {
-     font-size: 50px;
+ .content ul > h1 {
+     font-size: 32px;
  }
+
+ .content ul > h2 {
+    font-size: 24px;
+}
  
  .long-hr {
      width: 40%;
@@ -56,7 +60,7 @@
       
  .form-container {
      background-color: #86F0BD;
-     padding: 40px;
+     padding: 30px;
      margin: 0px 50px;
      border-radius: 20px;
      
@@ -128,7 +132,7 @@ span:hover {
 }
  
  .form-group {
-     padding: 20px;
+     padding: 10px;
  }
  
  .form-group:nth-child(n + 3) {
